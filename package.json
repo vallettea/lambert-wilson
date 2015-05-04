@@ -1,6 +1,6 @@
 {
   "name": "lambert-wilson",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A javascript function to convert Lambert coordiantes in WGS (and reverse).",
   "main": "index.js",
   "scripts": {

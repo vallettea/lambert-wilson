@@ -12,27 +12,13 @@ npm install lambert-wilson
 Example usage:
 
 ```
-var CC = 45; // CC is the number of the lamber projection 
-var deltaX = 4177302.562212417;
-var deltaY = 1297500.1046884255; 
-// deltaX, deltaY are the shifts from the original center
+var lw = require("../index.js")(45, 0, 0);
 
-var lw = require("lambert-wilson")(CC, deltaX, deltaY);
-```
+lw.toLambert(-0.570645, 44.840397);
+{ X: 1417799.8,
+  Y: 4188483.8 }
 
-and then you can:
-
-```
-lw.toLambert(-0.575587, 44.837900)
-{ X: -2759905.345153167,
-  Y: 2890723.679827112 }
-```
-
-and reverse:
+lw.toLonLat(1417799.8, 4188483.8);
+{lon: -0.570645, lat: 44.840397}
 
 ```
-lw.toLonLat(-2759905.345153167, 2890723.679827112)
-{ lon: -0.5755870000000036,
-  lat: -44.83789998510867 }
-```
-
