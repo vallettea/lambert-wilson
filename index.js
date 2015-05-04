@@ -78,7 +78,7 @@ module.exports = function(CC, deltaX, deltaY){
             var delta = Math.abs( p1 - p0 );
             while( delta > 0.000001 ){
                 p0 = p1;
-                p1 = 2 * Math.atan( Math.pow(R/C, 1/n) * Math.pow((1+e*Math.sin(p0))/(1-e*Math.sin(p0)), e/2) ) - pi/2; 
+                p1 = 2 * Math.atan( Math.pow(C/R, 1/n) * Math.pow((1+e*Math.sin(p0))/(1-e*Math.sin(p0)), e/2) ) - pi/2; 
                 delta = Math.abs( p1 - p0 );
             }
 
